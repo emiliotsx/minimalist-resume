@@ -1,9 +1,9 @@
 {
   "personal": {
     "name": "Emilio Francisco González Lima",
-    "summary": "Web Developer con mas de 5 años de experiencia",
+    "summary": "Full Stack Developer con +5 años de experiencia & desarrollo de aplicaciones moviles con React Native.",
     "location": "Ciudad de Guatemala, Guatemala",
-    "image": "/me.jpg",
+    "image": "https://pbs.twimg.com/profile_images/1750400835563958272/9MENWsYo_400x400.jpg",
     "email": "emiliofgonzalez7@gmail.com",
     "webUrl": "https://emiliogonzalez-emiliofg.vercel.app/",
     "about": "+5 años de experiencia como Desarrollador Web. Actualmente trabajo principalmente con TypeScript, Node.js, Java, Oracle y PostgreSQL. Tengo mas de 2 años de experiencia trabajando como freelance.",
@@ -29,21 +29,6 @@
       "endDate": null,
       "summary": "Encargado de desarrollar nuevas funcionalidades, trabajando el frontend, backend y ajustes en la base de datos. Apoyo en Analisis e integracion de nuevos desarrollos con proveedores externos.",
       "highlights": [
-        "hybrid",
-        "frontend",
-        "backend",
-        "database"
-      ]
-    },
-    {
-      "company": "Autonomo",
-      "position": "Web Developer",
-      "url": "https://emiliogonzalez-emiliofg.vercel.app/",
-      "startDate": null,
-      "endDate": null,
-      "summary": "Freelance",
-      "highlights": [
-        "Freelance",
         "hybrid",
         "frontend",
         "backend",
@@ -100,6 +85,32 @@
     }
   ],
   "projects": [
+    {
+      "name": "Wedding Invitation",
+      "isActive": true,
+      "description": "Invitación para una boda, con toda la información importante, con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "jycwedding.com",
+      "github": ""
+    },
+    {
+      "name": "Wedding Invitation",
+      "isActive": true,
+      "description": "Invitación para una boda, con toda la información importante, con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "jycwedding.com",
+      "github": ""
+    },
     {
       "name": "Wedding Invitation",
       "isActive": true,

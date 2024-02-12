@@ -1,0 +1,46 @@
+---
+import Section from "@/components/Section.astro";
+
+import { projects } from "@cv";
+---
+
+<Section title="Projects">
+  <ul>
+    {
+      projects.map(({ name, isActive, description, highlights, url }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <a href={url} title={`Ver el proyecto ${name}`} target="_blank">
+                  {isActive && <span>•</span>}
+                  <h3>{name}</h3>
+                </a>
+                <p>{description}</p>
+              </header>
+              <footer>
+                <ul>
+                  {highlights.map((highlight) => (
+                    <li>{highlight}</li>
+                  ))}
+                </ul>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  article {
+    
+  }
+</style>
