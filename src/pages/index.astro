@@ -1,0 +1,55 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Experience from "@/components/sections/Experience.astro";
+import About from "@/components/sections/About.astro";
+import Education from "@/components/sections/Education.astro";
+import Hero from "@/components/sections/Hero.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+---
+
+<Layout title="Minimalist Resume">
+  <main>
+    <Hero />
+    <About />
+    <Experience />
+    <Projects />
+    <Education />
+    <Skills />
+  </main>
+  <footer class="no-print">
+    Pulsa <kbd>Ctrl</kbd> + <kbd>P</kbd> para poder imprimir
+  </footer>
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  kbd {
+    background: #eee;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+
+  footer {
+    background: #fdfdfd;
+    border-top: 1px solid #eee;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-block: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  @media (width <= 600px) {
+    footer {
+      display: none;
+    }
+  }
+</style>
