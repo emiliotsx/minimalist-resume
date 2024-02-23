@@ -5,7 +5,7 @@ import Email from "@/assets/icons/Email.astro";
 import GitHub from "@/assets/icons/GitHub.astro";
 import LinkedIn from "@/assets/icons/LinkedIn.astro";
 
-import { personal } from "@cv";
+import { personal } from "@resume";
 
 const { name, summary, location, email, image, networking } = personal;
 
@@ -13,6 +13,9 @@ const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
   LinkedIn,
 };
+
+const infoNetworking = networking.map((n) => n.url);
+const printInfoNetworking = [email, ...infoNetworking].join(" • ");
 ---
 
 <Section>
@@ -24,7 +27,8 @@ const SOCIAL_ICONS: Record<string, any> = {
         <World />
         {location}
       </span>
-      <footer>
+      <footer class="print">{printInfoNetworking}</footer>
+      <footer class="no-print">
         {
           email && (
             <a
@@ -55,7 +59,6 @@ const SOCIAL_ICONS: Record<string, any> = {
       </footer>
     </div>
     <figure>
-      <!-- Agregar mi imagen -->
       <img src={image} alt="profile" />
     </figure>
   </div>
@@ -79,6 +82,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 
   h1 {
     font-size: 2rem;
+    line-height: 2rem;
   }
 
   h2 {
@@ -91,7 +95,7 @@ const SOCIAL_ICONS: Record<string, any> = {
   img {
     aspect-ratio: 1/1;
     object-fit: cover;
-    width: 128px;
+    width: 150px;
     border-radius: 6px;
   }
 
@@ -99,15 +103,16 @@ const SOCIAL_ICONS: Record<string, any> = {
     color: #666;
     display: flex;
     align-items: center;
-    gap: .25rem;
+    gap: 0.25rem;
     font-size: 0.85rem;
     letter-spacing: -0.05rem;
   }
 
   footer {
+    font-size: 0.7rem;
     display: flex;
     gap: 4px;
-    margin-top: 8px;
+    margin-top: 1px;
   }
 
   footer a {
@@ -120,11 +125,26 @@ const SOCIAL_ICONS: Record<string, any> = {
     height: 32px;
     width: 32px;
     border-radius: 6px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
   footer a:hover {
     background: #eee;
     border: 1px solid #ddd;
+  }
+
+  @media (width <= 700px) {
+    .info {
+      padding-right: 0;
+    }
+
+    img {
+      width: 100px;
+    }
+
+    span {
+      font-size: 0.7rem;
+      letter-spacing: 0.05rem;
+    }
   }
 </style>

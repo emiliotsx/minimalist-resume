@@ -1,0 +1,134 @@
+{
+  "personal": {
+    "name": "Emilio González",
+    "summary": "Web Developer con más de 5 años de experiencia.",
+    "location": "Ciudad de Guatemala, Guatemala",
+    "image": "/me.webp",
+    "email": "emiliofgonzalez7@gmail.com",
+    "webUrl": "https://emiliogonzalez-emiliofg.vercel.app/",
+    "about": "+5 años de experiencia como desarrollador web. Actualmente estoy trabajando como Senior Software Developer y también atiendo proyectos como freelance, mi enfoque se centra en crear soluciones personalizadas que satisfagan las necesidades de las personas.",
+    "networking": [
+      {
+        "network": "LinkedIn",
+        "username": "emiliotsx",
+        "url": "https://linkedin.com/in/emiliotsx"
+      },
+      {
+        "network": "GitHub",
+        "username": "emiliotsx",
+        "url": "https://github.com/emiliotsx"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Grupo Tecun",
+      "position": "Senior Web Developer",
+      "url": "https://www.grupotecun.com/",
+      "startDate": "2022-03-01",
+      "endDate": null,
+      "summary": "Encargado de desarrollar nuevas funcionalidades, trabajando el frontend, backend y ajustes en la base de datos. Apoyo en Analisis e integracion de nuevos desarrollos con proveedores externos.",
+      "highlights": [
+        "hybrid",
+        "frontend",
+        "backend",
+        "database"
+      ]
+    },
+    {
+      "company": "Autonomo",
+      "position": "Web Developer",
+      "url": "",
+      "startDate": "2021-12-01",
+      "endDate": null,
+      "summary": "Desde finales de 2021 he prestado mis servicios como Freelance, trabajando en empresas como Estratek, Wis, etc. He brindado mis servicios realizando desarrollos a la medida, configuraciones en base de datos e implementaciones de nuevos softwares.",
+      "highlights": [
+        "hybrid",
+        "frontend",
+        "backend",
+        "database"
+      ]
+    },
+    {
+      "company": "Osigu",
+      "position": "Technical Support Analyst",
+      "url": "https://www.osigu.com/",
+      "startDate": "2020-10-01",
+      "endDate": "2021-07-01",
+      "summary": "Estuve en el equipo de integraciones, ayudando a clientes externos a integrar los servicios de la empresa a travéz del uso de ddl, adicional apoye en el desarrollo de una landing page encargada de automatizar un proceso interno de la empresa, la misma fue desarrollada en vue para el frontend y java con spring booth para el backend.",
+      "highlights": [
+        "remote",
+        "frontend"
+      ]
+    },
+    {
+      "company": "Corporación Master Group",
+      "position": "FrontEnd Developer",
+      "url": "https://linkedin.com/company/corporación-master-group",
+      "startDate": "2020-02-10",
+      "endDate": "2020-08-01",
+      "summary": "Encargado de llevar el diseño hacia una pagina web, fui el encargado del desarrollo de la landing page principal de la empresa, esta se encontraba integrada con prismic ya que el equipo de marketing tenia la capacidad de cambiar las imagenes, textos y secciones cuando lo creyera pertinente. Adicional estuve en el equipo que se encargo del rediseño de la plataforma de administración migrando de angular 7.0 a nuxt.",
+      "highlights": [
+        "hybrid",
+        "frontend"
+      ]
+    },
+    {
+      "company": "Estratek",
+      "position": "Desarrollador Plataforma Estratek -> Desarrollo de Proyectos",
+      "url": "https://www.estratek.com/",
+      "startDate": "2017-11-01",
+      "endDate": "2020-02-01",
+      "summary": "Fui el responsable del desarrollo y mantenimiento de la plataforma principal de la empresa, encargandome del analisis y estimación de los nuevos desarrollos. Adicional estuve como desarrollador de proyectos, posición en la cual fui encargado de desarrollar las nuevas funcionalidades del ERP que se administraba hacia un cliente externo.",
+      "highlights": [
+        "hybrid",
+        "frontend",
+        "backend",
+        "database"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "J&C Wedding",
+      "isActive": true,
+      "description": "Es una landing page la cual se utilizo como invitacion y con toda la información importante referente a la boda. La misma cuenta con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "https://jycwedding.com",
+      "github": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Mariano Galvez de Guatemala",
+      "url": "https://www.umg.edu.gt/",
+      "area": "Ingeniería en Sistemas de Información y Ciencias de la Computación",
+      "studyType": "Postgrado",
+      "startDate": "2014-02-01",
+      "endDate": null
+    }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "Tailwind",
+    "JavaScript",
+    "TypeScript",
+    "Angular",
+    "React",
+    "Next.js",
+    "Java",
+    "PHP",
+    "Node",
+    "PostgreSQL",
+    "Oracle",
+    "SQL Server",
+    "Git",
+    "GitHub"
+  ]
+}

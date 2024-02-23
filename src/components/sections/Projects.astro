@@ -1,10 +1,10 @@
 ---
 import Section from "@/components/Section.astro";
 
-import { projects } from "@cv";
+import { projects } from "@resume";
 ---
 
-<Section title="Projects">
+<Section title="Proyectos">
   <ul>
     {
       projects.map(({ name, isActive, description, highlights, url }) => {
@@ -12,18 +12,22 @@ import { projects } from "@cv";
           <li>
             <article>
               <header>
-                <a href={url} title={`Ver el proyecto ${name}`} target="_blank">
-                  {isActive && <span>•</span>}
-                  <h3>{name}</h3>
-                </a>
+                <h3>
+                  <a
+                    href={url}
+                    title={`Ver el proyecto ${name}`}
+                    target="_blank"
+                  >
+                    {name}
+                  </a>
+                  {isActive && <span>&bull;</span>}
+                </h3>
                 <p>{description}</p>
               </header>
               <footer>
-                <ul>
-                  {highlights.map((highlight) => (
-                    <li>{highlight}</li>
-                  ))}
-                </ul>
+                {highlights.map((highlight) => (
+                  <span>{highlight}</span>
+                ))}
               </footer>
             </article>
           </li>
@@ -41,6 +45,54 @@ import { projects } from "@cv";
   }
 
   article {
-    
+    border-radius: 6px;
+    border: 1px solid #f2f2f2;
+    gap: 16px;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+    display: flex;
+  }
+
+  article header {
+    flex: 1;
+  }
+
+  article h3 {
+    margin-bottom: 4px;
+  }
+
+  article h3 span {
+    color: rgb(0, 188, 47);
+  }
+
+  article a {
+    color: #111;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    padding-bottom: 8px;
+  }
+
+  article footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 0.6rem;
+  }
+
+  footer span {
+    border-radius: 6px;
+    background: #eee;
+    color: #444;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
   }
 </style>

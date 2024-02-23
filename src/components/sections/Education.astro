@@ -1,7 +1,78 @@
 ---
 import Section from "@/components/Section.astro";
 
-
+import { education } from "@resume";
 ---
 
-<Section title="Education"></Section>
+<Section title="Educación">
+  <ul>
+    {
+      education.map(({ institution, startDate, endDate, area }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = !!endDate
+          ? new Date(endDate).getFullYear()
+          : "actualidad";
+        const years = `${startYear} - ${endYear}`;
+
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>{institution}</h3>
+                </div>
+                <time>{years}</time>
+              </header>
+              <footer>
+                <p>{area}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  article h3 {
+    font-weight: 600;
+    color: #111;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  time {
+    min-width: 100px;
+    display: flex;
+    justify-content: end;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+
+  footer p {
+    font-family: monospace;
+    text-wrap: pretty;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  @media (width <= 700px) {
+    article h3 {
+      max-width: 200px;
+    }
+  }
+</style>

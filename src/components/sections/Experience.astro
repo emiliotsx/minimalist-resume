@@ -1,10 +1,10 @@
 ---
 import Section from "@/components/Section.astro";
 
-import { work } from "@cv";
+import { work } from "@resume";
 ---
 
-<Section title="Experience">
+<Section title="Experiencia Laboral">
   <ul>
     {
       work.map(
@@ -12,7 +12,7 @@ import { work } from "@cv";
           const startYear = new Date(startDate).getFullYear();
           const endYear = !!endDate
             ? new Date(endDate).getFullYear()
-            : "Current";
+            : "actualidad";
           const years = `${startYear} - ${endYear}`;
 
           return (
@@ -41,16 +41,19 @@ import { work } from "@cv";
   ul {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 30px;
   }
 
   article h3 {
-    font-weight: 500;
+    font-weight: 600;
     color: #111;
   }
 
   article h4 {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: monospace;
+    margin-top: 0.2rem;
     color: #222;
   }
 
@@ -67,6 +70,14 @@ import { work } from "@cv";
     justify-content: end;
     font-size: 0.85rem;
     color: #555;
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  footer p {
+    font-family: monospace;
+    text-wrap: pretty;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #666;
   }
 </style>
