@@ -92,7 +92,7 @@
     {
       "name": "J&C Wedding",
       "isActive": true,
-      "description": "Es una landing page la cual se utilizó como invitación y con toda la información importante referente a la boda. La misma cuenta con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
+      "description": "Es una landing page la cual se utilizó como invitación y muestra toda la información importante referente a la boda. La misma cuenta con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
       "highlights": [
         "JavaScript & TypeScript",
         "Next.js",

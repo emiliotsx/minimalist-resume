@@ -1,0 +1,20 @@
+---
+const { currentLocale } = Astro;
+
+import Translate from "@/assets/icons/Translate.astro";
+
+const locale =
+  currentLocale === "es"
+    ? { text: "Ver en Inglés", redirectUrl: "/en" }
+    : { text: "Switch to Spanish", redirectUrl: "/" };
+---
+
+<div class="flex items-center justify-end -mb-8 w-full lg:w-[800px] mx-auto">
+  <a
+    class="no-print text-sm text-[#777] text-center border border-solid border-[#eee] p-1 h-8 w-36 rounded-md cursor-pointer transition-all ease-linear hover:bg-[#eee] hover:border-[#ddd] flex items-center justify-evenly"
+    href={locale.redirectUrl}
+  >
+    <Translate />
+    {locale.text}
+  </a>
+</div>

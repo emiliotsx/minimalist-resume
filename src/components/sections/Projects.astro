@@ -1,13 +1,24 @@
 ---
+const { currentLocale } = Astro;
+
 import Section from "@/components/Section.astro";
 
-import { projects } from "@resume";
+import { getI18n, resume } from "@/i18n";
+
+const { projects } = resume();
+const $t = getI18n(currentLocale);
+
+const title = currentLocale === "es" ? "Proyectos" : "Projects";
+const titleProject = (name: string) =>
+  currentLocale === "es"
+    ? `Ver el proyecto ${name}`
+    : `See the project ${name}`;
 ---
 
-<Section title="Proyectos">
+<Section title={title}>
   <ul>
     {
-      projects.map(({ name, isActive, description, highlights, url }) => {
+      projects.map(({ name, isActive, highlights, url }, index) => {
         return (
           <li>
             <article class="rounded-md border border-solid border-[#f2f2f2] gap-4 flex flex-col p-4 h-full">
@@ -15,15 +26,17 @@ import { projects } from "@resume";
                 <h3 class="mb-1">
                   <a
                     href={url}
-                    title={`Ver el proyecto ${name}`}
+                    title={titleProject(name)}
                     target="_blank"
                     class="text-lg text-[#111] hover:underline"
                   >
-                    {name}
+                    {$t("projects", index, "name")}
                   </a>
                   {isActive && <span class="text-[#00bc2f]">&bull;</span>}
                 </h3>
-                <p class="text-lg font-mono font-normal pb-2">{description}</p>
+                <p class="text-lg font-mono font-normal pb-2">
+                  {$t("projects", index, "description")}
+                </p>
               </header>
               <footer class="inline-flex flex-wrap gap-1 text-base">
                 {highlights.map((highlight) => (

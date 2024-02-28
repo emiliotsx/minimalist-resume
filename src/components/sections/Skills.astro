@@ -1,10 +1,16 @@
 ---
+const { currentLocale } = Astro;
+
 import Section from "@/components/Section.astro";
 
-import { skills } from "@resume";
+import { resume } from "@/i18n";
+
+const { skills } = resume();
+
+const title = currentLocale === "es" ? "Educación" : "Education";
 ---
 
-<Section title="Habilidades">
+<Section title={title}>
   <ul class="inline-flex flex-wrap gap-2 mt-1">
     {
       skills.map((skill) => (

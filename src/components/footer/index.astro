@@ -1,9 +1,17 @@
 ---
+const { currentLocale } = Astro;
+
 import Kbd from "./Kbd.astro";
+
+const text = currentLocale === "es" ? "Pulsa" : "Press";
+const textTwo =
+  currentLocale === "es" ? "para poder imprimir" : "to be able to print";
 ---
 
 <footer
-  class="no-print bg-[#fdfdfd] border-t-2 border-solid border=[#eee] fixed bottom-0 left-0 w-full py-4 text-center text-2xl"
+  class="no-print bg-[#fdfdfd] border-t-2 border-solid border=[#eee] fixed bottom-0 left-0 w-full py-2 text-center text-lg hidden lg:block"
 >
-  Pulsa <Kbd text="Ctrl" /> + <Kbd text="P" /> para poder imprimir
+  {text}
+  <Kbd text="Ctrl" /> + <Kbd text="P" />
+  {textTwo}
 </footer>

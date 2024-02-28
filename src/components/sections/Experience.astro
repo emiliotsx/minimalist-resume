@@ -1,44 +1,53 @@
 ---
+const { currentLocale } = Astro;
+
 import Section from "@/components/Section.astro";
 
-import { work } from "@resume";
+import { getI18n, resume } from "@/i18n";
+
+const { work } = resume();
+const $t = getI18n(currentLocale);
+
+const title =
+  currentLocale === "es" ? "Experiencia Laboral" : "Work Experience";
+const currentText = currentLocale === "es" ? "actualidad" : "current";
 ---
 
-<Section title="Experiencia Laboral">
+<Section title={title}>
   <ul class="flex flex-col gap-8">
     {
-      work.map(
-        ({ company, position, startDate, endDate, summary }) => {
-          const startYear = new Date(startDate).getFullYear();
-          const endYear = !!endDate
-            ? new Date(endDate).getFullYear()
-            : "actualidad";
-          const years = `${startYear} - ${endYear}`;
+      work.map(({ startDate, endDate }, index) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = !!endDate
+          ? new Date(endDate).getFullYear()
+          : currentText;
+        const years = `${startYear} - ${endYear}`;
 
-          return (
-            <li>
-              <article>
-                <header class="flex justify-between items-start mb-1 text-lg">
-                  <div>
-                    <h3 class="text-xl font-semibold text-[#111]">{company}</h3>
-                    <h4 class="text-xl font-medium font-mono mt-1 text-[#222]">
-                      {position}
-                    </h4>
-                  </div>
-                  <time class="min-w-24 flex justify-end text-base text-[#555] mt-2">
-                    {years}
-                  </time>
-                </header>
-                <footer>
-                  <p class="text-lg text-wrap font-mono leading-6 font-normal text-[#666]">
-                    {summary}
-                  </p>
-                </footer>
-              </article>
-            </li>
-          );
-        },
-      )
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between items-start mb-1 text-lg">
+                <div>
+                  <h3 class="text-xl font-semibold text-[#111]">
+                    {$t("work", index, "company")}
+                  </h3>
+                  <h4 class="text-xl font-medium font-mono mt-1 text-[#222]">
+                    {$t("work", index, "position")}
+                  </h4>
+                </div>
+                <time class="min-w-24 flex justify-end text-base text-[#555] mt-2">
+                  {years}
+                </time>
+              </header>
+              <footer>
+                <p class="text-lg text-wrap font-mono leading-6 font-normal text-[#666]">
+                  {$t("work", index, "summary")}
+                </p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>

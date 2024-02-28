@@ -1,11 +1,15 @@
 ---
+const { currentLocale } = Astro;
+
 import Section from "@/components/Section.astro";
 
-import { personal } from "@resume";
+import { getI18n } from "@/i18n";
 
-const { about } = personal;
+const $t = getI18n(currentLocale);
+
+const title = currentLocale === "es" ? "Sobre mí" : "About me";
 ---
 
-<Section title="Sobre mí">
-  <p class="text-lg font-normal font-mono">{about}</p>
+<Section title={title}>
+  <p class="text-lg font-normal font-mono">{$t("personal.about")}</p>
 </Section>

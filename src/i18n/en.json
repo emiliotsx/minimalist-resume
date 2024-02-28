@@ -1,0 +1,134 @@
+{
+  "personal": {
+    "name": "Emilio González",
+    "summary": "Web Developer with more than 5 years of experience.",
+    "location": "Guatemala City, Guatemala",
+    "image": "/me.webp",
+    "email": "emiliofgonzalez7@gmail.com",
+    "webUrl": "https://emiliogonzalez-emiliofg.vercel.app/",
+    "about": "+5 years of experience as a web developer. I am currently working as a Senior Software Developer and I also take on projects as a freelancer, my focus is on creating custom solutions that meet people's needs.",
+    "networking": [
+      {
+        "network": "LinkedIn",
+        "username": "emiliotsx",
+        "url": "https://linkedin.com/in/emiliotsx"
+      },
+      {
+        "network": "GitHub",
+        "username": "emiliotsx",
+        "url": "https://github.com/emiliotsx"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Grupo Tecun",
+      "position": "Senior Web Developer",
+      "url": "https://www.grupotecun.com/",
+      "startDate": "2022-03-01",
+      "endDate": null,
+      "summary": "In charge of developing new functionalities, working on the frontend, backend and database adjustments. Support in analysis and integration of new developments with external suppliers.",
+      "highlights": [
+        "hybrid",
+        "frontend",
+        "backend",
+        "database"
+      ]
+    },
+    {
+      "company": "Autónomo",
+      "position": "Web Developer",
+      "url": "",
+      "startDate": "2021-12-01",
+      "endDate": null,
+      "summary": "Since the end of 2021 I have provided my services as a Freelance, working in companies such as Estratek, Wis, etc. I have provided my services carrying out custom developments, database configurations and implementations of new software.",
+      "highlights": [
+        "hybrid",
+        "frontend",
+        "backend",
+        "database"
+      ]
+    },
+    {
+      "company": "Osigu",
+      "position": "Technical Support Analyst",
+      "url": "https://www.osigu.com/",
+      "startDate": "2020-10-01",
+      "endDate": "2021-07-01",
+      "summary": "I was in the integrations team, helping external clients to integrate the company's services through the use of ddl, additionally, I supported the development of a landing page in charge of automating an internal process of the company, it was developed in vue for the frontend and java with spring booth for the backend.",
+      "highlights": [
+        "remote",
+        "frontend"
+      ]
+    },
+    {
+      "company": "Corporación Master Group",
+      "position": "FrontEnd Developer",
+      "url": "https://linkedin.com/company/corporación-master-group",
+      "startDate": "2020-02-10",
+      "endDate": "2020-08-01",
+      "summary": "In charge of bringing the design to a website, I was in charge of developing the company's main landing page, this was integrated with prismic since the marketing team had the ability to change the images, texts and sections whenever they wanted. relevant. Additionally, I was on the team that was in charge of redesigning the administration platform, migrating from Angular 7.0 to Nuxt.",
+      "highlights": [
+        "hybrid",
+        "frontend"
+      ]
+    },
+    {
+      "company": "Estratek",
+      "position": "Estratek Platform Developer -> Project Development",
+      "url": "https://www.estratek.com/",
+      "startDate": "2017-11-01",
+      "endDate": "2020-02-01",
+      "summary": "I was responsible for the development and maintenance of the company's main platform, in charge of the analysis and estimation of new developments. Additionally, I was a project developer, a position in which I was in charge of developing new ERP functionalities that were managed for an external client.",
+      "highlights": [
+        "hybrid",
+        "frontend",
+        "backend",
+        "database"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "J&C Wedding",
+      "isActive": true,
+      "description": "In charge of developing new functionalities, working on the frontend, backend and database adjustments. Support in analysis and integration of new developments with external suppliers.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "https://jycwedding.com",
+      "github": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Mariano Galvez University of Guatemala",
+      "url": "https://www.umg.edu.gt/",
+      "area": "Information Systems Engineering and Computer Science",
+      "studyType": "Postgrado",
+      "startDate": "2014-02-01",
+      "endDate": null
+    }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "Tailwind",
+    "JavaScript",
+    "TypeScript",
+    "Angular",
+    "React",
+    "Next.js",
+    "Java",
+    "PHP",
+    "Node",
+    "PostgreSQL",
+    "Oracle",
+    "SQL Server",
+    "Git",
+    "GitHub"
+  ]
+}
