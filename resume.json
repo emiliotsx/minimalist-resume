@@ -27,7 +27,7 @@
       "url": "https://www.grupotecun.com/",
       "startDate": "2022-03-01",
       "endDate": null,
-      "summary": "Encargado de desarrollar nuevas funcionalidades, trabajando el frontend, backend y ajustes en la base de datos. Apoyo en Analisis e integracion de nuevos desarrollos con proveedores externos.",
+      "summary": "Encargado de desarrollar nuevas funcionalidades, trabajando el frontend, backend y ajustes en la base de datos. Apoyo en análisis e integracion de nuevos desarrollos con proveedores externos.",
       "highlights": [
         "hybrid",
         "frontend",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "company": "Autonomo",
+      "company": "Autónomo",
       "position": "Web Developer",
       "url": "",
       "startDate": "2021-12-01",
@@ -55,7 +55,7 @@
       "url": "https://www.osigu.com/",
       "startDate": "2020-10-01",
       "endDate": "2021-07-01",
-      "summary": "Estuve en el equipo de integraciones, ayudando a clientes externos a integrar los servicios de la empresa a travéz del uso de ddl, adicional apoye en el desarrollo de una landing page encargada de automatizar un proceso interno de la empresa, la misma fue desarrollada en vue para el frontend y java con spring booth para el backend.",
+      "summary": "Estuve en el equipo de integraciones, ayudando a clientes externos a integrar los servicios de la empresa a través del uso de ddl, adicionalmente, apoyé en el desarrollo de una landing page encargada de automatizar un proceso interno de la empresa, la misma fue desarrollada en vue para el frontend y java con spring booth para el backend.",
       "highlights": [
         "remote",
         "frontend"
@@ -67,7 +67,7 @@
       "url": "https://linkedin.com/company/corporación-master-group",
       "startDate": "2020-02-10",
       "endDate": "2020-08-01",
-      "summary": "Encargado de llevar el diseño hacia una pagina web, fui el encargado del desarrollo de la landing page principal de la empresa, esta se encontraba integrada con prismic ya que el equipo de marketing tenia la capacidad de cambiar las imagenes, textos y secciones cuando lo creyera pertinente. Adicional estuve en el equipo que se encargo del rediseño de la plataforma de administración migrando de angular 7.0 a nuxt.",
+      "summary": "Encargado de llevar el diseño hacia una pagina web, fui el encargado del desarrollo de la landing page principal de la empresa, esta se encontraba integrada con prismic ya que el equipo de marketing tenía la capacidad de cambiar las imágenes, textos y secciones cuando lo creyera pertinente. adicionalmente, estuve en el equipo que se encargó del rediseño de la plataforma de administración migrando de angular 7.0 a nuxt.",
       "highlights": [
         "hybrid",
         "frontend"
@@ -79,7 +79,7 @@
       "url": "https://www.estratek.com/",
       "startDate": "2017-11-01",
       "endDate": "2020-02-01",
-      "summary": "Fui el responsable del desarrollo y mantenimiento de la plataforma principal de la empresa, encargandome del analisis y estimación de los nuevos desarrollos. Adicional estuve como desarrollador de proyectos, posición en la cual fui encargado de desarrollar las nuevas funcionalidades del ERP que se administraba hacia un cliente externo.",
+      "summary": "Fui el responsable del desarrollo y mantenimiento de la plataforma principal de la empresa, encargandome del análisis y estimación de los nuevos desarrollos. adicionalmente, estuve como desarrollador de proyectos, posición en la cual fui encargado de desarrollar las nuevas funcionalidades del ERP que se administraba hacia un cliente externo.",
       "highlights": [
         "hybrid",
         "frontend",
@@ -92,7 +92,7 @@
     {
       "name": "J&C Wedding",
       "isActive": true,
-      "description": "Es una landing page la cual se utilizo como invitacion y con toda la información importante referente a la boda. La misma cuenta con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
+      "description": "Es una landing page la cual se utilizó como invitación y con toda la información importante referente a la boda. La misma cuenta con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
       "highlights": [
         "JavaScript & TypeScript",
         "Next.js",
