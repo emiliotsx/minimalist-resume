@@ -1,17 +1,25 @@
 ---
+const { currentLocale } = Astro;
+
 import Section from "@/components/Section.astro";
 
-import { education } from "@resume";
+import { getI18n, resume } from "@/i18n";
+
+const { education } = resume();
+const $t = getI18n(currentLocale);
+
+const title = currentLocale === "es" ? "Educación" : "Education";
+const currentText = currentLocale === "es" ? "actualidad" : "current";
 ---
 
-<Section title="Educación">
+<Section title={title}>
   <ul class="flex flex-col gap-8">
     {
-      education.map(({ institution, startDate, endDate, area }) => {
+      education.map(({ startDate, endDate }, index) => {
         const startYear = new Date(startDate).getFullYear();
         const endYear = !!endDate
           ? new Date(endDate).getFullYear()
-          : "actualidad";
+          : currentText;
         const years = `${startYear} - ${endYear}`;
 
         return (
@@ -20,7 +28,7 @@ import { education } from "@resume";
               <header class="flex justify-between items-start mb-1">
                 <div>
                   <h3 class="text-xl font-semibold text-[#111]">
-                    {institution}
+                    {$t("education", index, "institution")}
                   </h3>
                 </div>
                 <time class="min-w-32 flex justify-end text-base text-[#555] mt-2">
@@ -29,7 +37,7 @@ import { education } from "@resume";
               </header>
               <footer>
                 <p class="text-lg font-mono text-pretty leading-6 text-[#666]">
-                  {area}
+                  {$t("education", index, "area")}
                 </p>
               </footer>
             </article>

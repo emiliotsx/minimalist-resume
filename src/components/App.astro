@@ -1,0 +1,28 @@
+---
+const { currentLocale } = Astro;
+
+import Layout from "@/layouts/Layout.astro";
+import LanguageSelector from "@/components/LanguageSelector.astro"
+import Hero from "@/components/sections/Hero.astro";
+import About from "@/components/sections/About.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Education from "@/components/sections/Education.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+import Footer from "@/components/footer/index.astro";
+
+import { getI18n } from "@/i18n";
+
+const $t = getI18n(currentLocale);
+---
+
+<Layout title={`Portfolio ${$t("personal.name")} - ${$t("personal.summary")}`}>
+  <LanguageSelector />
+  <Hero />
+  <About />
+  <Experience />
+  <Education />
+  <Projects />
+  <Skills />
+  <Footer />
+</Layout>
