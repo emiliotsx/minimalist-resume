@@ -2,27 +2,7 @@
 const { title } = Astro.props;
 ---
 
-<section>
-  {title && <h2>{title}</h2>}
+<section class="w-full mx-auto lg:w-[800px] my-10">
+  {title && <h2 class="mb-[6px] font-bold leading-6 text-2xl">{title}</h2>}
   <slot />
 </section>
-
-<style>
-  section {
-    max-width: 650px;
-    margin: 0 auto 40px;
-  }
-
-  h2 {
-    margin-bottom: 6px;
-    font-weight: 700;
-    line-height: 1.5;
-    font-size: 1.5rem;
-  }
-
-  @media (width <= 700px) {
-    section {
-      margin-bottom: 30px;
-    }
-  }
-</style>

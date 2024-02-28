@@ -19,19 +19,22 @@ const printInfoNetworking = [email, ...infoNetworking].join(" • ");
 ---
 
 <Section>
-  <div class="container">
-    <div class="info">
-      <h1>{name}</h1>
-      <h2>{summary}</h2>
-      <span>
+  <div class="flex flex-row items-center justify-between gap-4">
+    <div class="flex flex-col gap-2 pr-8">
+      <h1 class="text-4xl font-bold">{name}</h1>
+      <h2 class="text-2xl text-[#444] font-mono">{summary}</h2>
+      <span
+        class="text-[#666] flex items-center gap-1 text-xl tracking-tighter font-mono"
+      >
         <World />
         {location}
       </span>
       <footer class="print">{printInfoNetworking}</footer>
-      <footer class="no-print">
+      <footer class="no-print text-xs flex gap-1 mt-[1px]">
         {
           email && (
             <a
+              class="text-[#777] inline-flex items-center justify-center border border-solid border-[#eee] p-1 h-8 w-8 rounded-md transition-all ease-linear hover:bg-[#eee] hover:border-[#ddd]"
               href={`mailto:${email}`}
               href={`Enviar un correo electronico a ${name} al correo ${email}`}
               target="_blank"
@@ -46,6 +49,7 @@ const printInfoNetworking = [email, ...infoNetworking].join(" • ");
             const Icon = SOCIAL_ICONS[network];
             return (
               <a
+                class="text-[#777] inline-flex items-center justify-center border border-solid border-[#eee] p-1 h-8 w-8 rounded-md transition-all ease-linear hover:bg-[#eee] hover:border-[#ddd]"
                 href={url}
                 title={`Visitar el perfil de ${username} en ${network}`}
                 target="_blank"
@@ -59,92 +63,11 @@ const printInfoNetworking = [email, ...infoNetworking].join(" • ");
       </footer>
     </div>
     <figure>
-      <img src={image} alt="profile" />
+      <img
+        class="aspect-square object-cover w-40 rounded-md"
+        src={image}
+        alt="profile"
+      />
     </figure>
   </div>
 </Section>
-
-<style>
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-right: 32px;
-  }
-
-  h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
-  h2 {
-    color: #444;
-    font-weight: 500;
-    font-size: 1.1rem;
-    text-wrap: balance;
-  }
-
-  img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: 150px;
-    border-radius: 6px;
-  }
-
-  span {
-    color: #666;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.85rem;
-    letter-spacing: -0.05rem;
-  }
-
-  footer {
-    font-size: 0.7rem;
-    display: flex;
-    gap: 4px;
-    margin-top: 1px;
-  }
-
-  footer a {
-    color: #777;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
-    padding: 4px;
-    height: 32px;
-    width: 32px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-  }
-
-  footer a:hover {
-    background: #eee;
-    border: 1px solid #ddd;
-  }
-
-  @media (width <= 700px) {
-    .info {
-      padding-right: 0;
-    }
-
-    img {
-      width: 100px;
-    }
-
-    span {
-      font-size: 0.7rem;
-      letter-spacing: 0.05rem;
-    }
-  }
-</style>
