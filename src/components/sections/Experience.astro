@@ -5,10 +5,10 @@ import { work } from "@resume";
 ---
 
 <Section title="Experiencia Laboral">
-  <ul>
+  <ul class="flex flex-col gap-8">
     {
       work.map(
-        ({ company, position, startDate, endDate, summary, highlights }) => {
+        ({ company, position, startDate, endDate, summary }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear = !!endDate
             ? new Date(endDate).getFullYear()
@@ -18,15 +18,21 @@ import { work } from "@resume";
           return (
             <li>
               <article>
-                <header>
+                <header class="flex justify-between items-start mb-1 text-lg">
                   <div>
-                    <h3>{company}</h3>
-                    <h4>{position}</h4>
+                    <h3 class="text-xl font-semibold text-[#111]">{company}</h3>
+                    <h4 class="text-xl font-medium font-mono mt-1 text-[#222]">
+                      {position}
+                    </h4>
                   </div>
-                  <time>{years}</time>
+                  <time class="min-w-24 flex justify-end text-base text-[#555] mt-2">
+                    {years}
+                  </time>
                 </header>
                 <footer>
-                  <p>{summary}</p>
+                  <p class="text-lg text-wrap font-mono leading-6 font-normal text-[#666]">
+                    {summary}
+                  </p>
                 </footer>
               </article>
             </li>
@@ -36,61 +42,3 @@ import { work } from "@resume";
     }
   </ul>
 </Section>
-
-<style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  article h3 {
-    font-weight: 600;
-    color: #111;
-  }
-
-  article h4 {
-    font-weight: 500;
-    font-size: 0.9rem;
-    font-family: monospace;
-    margin-top: 0.2rem;
-    color: #222;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-  }
-
-  time {
-    min-width: 100px;
-    display: flex;
-    justify-content: end;
-    font-size: 0.85rem;
-    color: #555;
-    margin-top: 0.5rem;
-  }
-
-  footer p {
-    font-family: monospace;
-    text-wrap: pretty;
-    line-height: 1.5;
-    font-size: 0.9rem;
-    color: #666;
-  }
-
-  @media (width <= 700px) {
-    article h3 {
-      font-size: 1.8rem;
-    }
-    article h4 {
-      font-size: 1.5rem;
-    }
-
-    footer p {
-      font-size: 0.9rem;
-    }
-  }
-</style>
