@@ -1,12 +1,12 @@
 {
   "personal": {
     "name": "Emilio González",
-    "summary": "Web Developer with more than 5 years of experience.",
+    "summary": "Web Developer",
     "location": "Guatemala City, Guatemala",
     "image": "/me.webp",
     "email": "emiliofgonzalez7@gmail.com",
-    "webUrl": "https://emiliogonzalez-emiliofg.vercel.app/",
-    "about": "+5 years of experience as a web developer. I am currently working as a Senior Software Developer and I also take on projects as a freelancer, my focus is on creating custom solutions that meet people's needs.",
+    "webUrl": " https://emiliogonzalez.dev/",
+    "about": "years of experience based in Guatemala, passionate about web development.",
     "networking": [
       {
         "network": "LinkedIn",
@@ -36,12 +36,12 @@
       ]
     },
     {
-      "company": "Autónomo",
+      "company": "Freelance",
       "position": "Web Developer",
       "url": "",
-      "startDate": "2021-12-01",
-      "endDate": null,
-      "summary": "Since the end of 2021 I have provided my services as a Freelance, working in companies such as Estratek, Wis, etc. I have provided my services carrying out custom developments, database configurations and implementations of new software.",
+      "startDate": "2021-09-01",
+      "endDate": "2022-02-01",
+      "summary": "Provided maintenance services for websites and web applications, collaborating with different companies and helping small businesses achieve an online presence.",
       "highlights": [
         "hybrid",
         "frontend",
@@ -55,7 +55,7 @@
       "url": "https://www.osigu.com/",
       "startDate": "2020-10-01",
       "endDate": "2021-07-01",
-      "summary": "I was in the integrations team, helping external clients to integrate the company's services through the use of ddl, additionally, I supported the development of a landing page in charge of automating an internal process of the company, it was developed in vue for the frontend and java with spring booth for the backend.",
+      "summary": "Part of the integrations team, assisting external clients in integrating the company's services using DLL. Leveraging my FrontEnd knowledge, I supported the development of a landing page that helped automate internal processes and improve productivity.",
       "highlights": [
         "remote",
         "frontend"
@@ -67,7 +67,7 @@
       "url": "https://linkedin.com/company/corporación-master-group",
       "startDate": "2020-02-10",
       "endDate": "2020-08-01",
-      "summary": "In charge of bringing the design to a website, I was in charge of developing the company's main landing page, this was integrated with prismic since the marketing team had the ability to change the images, texts and sections whenever they wanted. relevant. Additionally, I was on the team that was in charge of redesigning the administration platform, migrating from Angular 7.0 to Nuxt.",
+      "summary": "Developed the main landing page for one of the company's products, using Prismic to give the marketing team full autonomy over published content. Contributed to the team responsible for migrating systems from Angular 7 to newer versions of Nuxt, enhancing user experience.",
       "highlights": [
         "hybrid",
         "frontend"
@@ -77,9 +77,9 @@
       "company": "Estratek",
       "position": "Estratek Platform Developer -> Project Development",
       "url": "https://www.estratek.com/",
-      "startDate": "2017-11-01",
+      "startDate": "2018-11-01",
       "endDate": "2020-02-01",
-      "summary": "I was responsible for the development and maintenance of the company's main platform, in charge of the analysis and estimation of new developments. Additionally, I was a project developer, a position in which I was in charge of developing new ERP functionalities that were managed for an external client.",
+      "summary": "Responsible for the development, maintenance, and support of external client systems. Took charge of the development and maintenance of the company's main platform, including analysis and delivery time estimation.",
       "highlights": [
         "hybrid",
         "frontend",
@@ -90,9 +90,9 @@
   ],
   "projects": [
     {
-      "name": "J&C Wedding",
+      "name": "J&Jeffrey and Cecilia's Wedding",
       "isActive": true,
-      "description": "In charge of developing new functionalities, working on the frontend, backend and database adjustments. Support in analysis and integration of new developments with external suppliers.",
+      "description": "This is a landing page used as an invitation, showcasing all the important information about the wedding. It includes a form connected to a database to confirm attendance at the event.",
       "highlights": [
         "JavaScript & TypeScript",
         "Next.js",
@@ -100,6 +100,32 @@
         "PostgreSQL"
       ],
       "url": "https://jycwedding.com",
+      "github": ""
+    },
+    {
+      "name": "Kevin and Ana Mildred's Wedding",
+      "isActive": true,
+      "description": "Online invitation with all the information about the itinerary, event location, and an option to confirm attendance.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "https://kymwedding.com",
+      "github": ""
+    },
+    {
+      "name": "Steeven and Fernanda's Wedding",
+      "isActive": true,
+      "description": "Online invitation with all the information about the itinerary, event location, and an image gallery with details about the couple.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "https://www.medinachangwedding.com/",
       "github": ""
     }
   ],
@@ -122,8 +148,11 @@
     "Angular",
     "React",
     "Next.js",
+    "Astro",
     "Java",
     "PHP",
+    "Node.js",
+    ".Net",
     "Node",
     "PostgreSQL",
     "Oracle",
