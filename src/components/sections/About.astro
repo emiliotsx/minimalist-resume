@@ -8,8 +8,10 @@ import { getI18n } from "@/i18n";
 const $t = getI18n(currentLocale);
 
 const title = currentLocale === "es" ? "Sobre mí" : "About me";
+
+const years = new Date().getFullYear() - 2018;
 ---
 
 <Section title={title}>
-  <p class="text-lg font-normal font-mono">{$t("personal.about")}</p>
+  <p class="text-lg font-normal font-mono">+ {years} {$t("personal.about")}</p>
 </Section>

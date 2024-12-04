@@ -1,12 +1,12 @@
 {
   "personal": {
     "name": "Emilio González",
-    "summary": "Web Developer con más de 5 años de experiencia.",
+    "summary": "Desarrollador Web",
     "location": "Ciudad de Guatemala, Guatemala",
     "image": "/me.webp",
     "email": "emiliofgonzalez7@gmail.com",
-    "webUrl": "https://emiliogonzalez-emiliofg.vercel.app/",
-    "about": "+5 años de experiencia como desarrollador web. Actualmente estoy trabajando como Senior Software Developer y también atiendo proyectos como freelance, mi enfoque se centra en crear soluciones personalizadas que satisfagan las necesidades de las personas.",
+    "webUrl": "https://emiliogonzalez.dev/",
+    "about": " años de experiencia con sede en Guatemala, apasionado por el desarrollo web.",
     "networking": [
       {
         "network": "LinkedIn",
@@ -27,7 +27,7 @@
       "url": "https://www.grupotecun.com/",
       "startDate": "2022-03-01",
       "endDate": null,
-      "summary": "Encargado de desarrollar nuevas funcionalidades, trabajando el frontend, backend y ajustes en la base de datos. Apoyo en análisis e integracion de nuevos desarrollos con proveedores externos.",
+      "summary": "Encargado de desarrollar nuevos modulos y funcionalidades al sistema, responsable del análisis y estimacion del mismo. Brindo apoyo en las integraciones que se realizan en la empresa.",
       "highlights": [
         "hybrid",
         "frontend",
@@ -37,11 +37,11 @@
     },
     {
       "company": "Autónomo",
-      "position": "Web Developer",
+      "position": "Desarrollador Web",
       "url": "",
-      "startDate": "2021-12-01",
-      "endDate": null,
-      "summary": "Desde finales de 2021 he prestado mis servicios como Freelance, trabajando en empresas como Estratek, Wis, etc. He brindado mis servicios realizando desarrollos a la medida, configuraciones en base de datos e implementaciones de nuevos softwares.",
+      "startDate": "2021-09-01",
+      "endDate": "2022-02-01",
+      "summary": "Brindé servicios de mantenimiento a sitios y aplicaciones web, colaborando con distintas empresas y ayudando a comercios pequeños a tener posicionamiento en internet.",
       "highlights": [
         "hybrid",
         "frontend",
@@ -51,23 +51,24 @@
     },
     {
       "company": "Osigu",
-      "position": "Technical Support Analyst",
+      "position": "Analista de Soporte Técnico",
       "url": "https://www.osigu.com/",
       "startDate": "2020-10-01",
       "endDate": "2021-07-01",
-      "summary": "Estuve en el equipo de integraciones, ayudando a clientes externos a integrar los servicios de la empresa a través del uso de ddl, adicionalmente, apoyé en el desarrollo de una landing page encargada de automatizar un proceso interno de la empresa, la misma fue desarrollada en vue para el frontend y java con spring booth para el backend.",
+      "summary": "Forme parte del equipo de integraciones, ayudando a clientes externos a integrar los servicios de la empresa a través del uso de ddl. Gracias a mis conocimientos en FrontEnd apoyé en el desarrollo de una landing page la cuál ayudo a automatizar los procesos internos y mejorar la productividad.",
       "highlights": [
         "remote",
-        "frontend"
+        "frontend",
+        "backend"
       ]
     },
     {
       "company": "Corporación Master Group",
-      "position": "FrontEnd Developer",
+      "position": "Desarrollador Frontend",
       "url": "https://linkedin.com/company/corporación-master-group",
       "startDate": "2020-02-10",
       "endDate": "2020-08-01",
-      "summary": "Encargado de llevar el diseño hacia una pagina web, fui el encargado del desarrollo de la landing page principal de la empresa, esta se encontraba integrada con prismic ya que el equipo de marketing tenía la capacidad de cambiar las imágenes, textos y secciones cuando lo creyera pertinente. adicionalmente, estuve en el equipo que se encargó del rediseño de la plataforma de administración migrando de angular 7.0 a nuxt.",
+      "summary": "Desarrollé la landing principal de uno de los productos de la empresa, utilizando prismic para que el equipo de marketing tuviese total autonomia en el contenido que se publicaba. Forme parte del equipo encargado de migrar los sistemas de angular 7 a versiones recientes de nuxt, mejorando la experiencia de usuario al momento de utilizarlas.",
       "highlights": [
         "hybrid",
         "frontend"
@@ -75,11 +76,11 @@
     },
     {
       "company": "Estratek",
-      "position": "Desarrollador Plataforma Estratek -> Desarrollo de Proyectos",
+      "position": "Desarrollador de Proyectos",
       "url": "https://www.estratek.com/",
-      "startDate": "2017-11-01",
+      "startDate": "2018-11-01",
       "endDate": "2020-02-01",
-      "summary": "Fui el responsable del desarrollo y mantenimiento de la plataforma principal de la empresa, encargandome del análisis y estimación de los nuevos desarrollos. adicionalmente, estuve como desarrollador de proyectos, posición en la cual fui encargado de desarrollar las nuevas funcionalidades del ERP que se administraba hacia un cliente externo.",
+      "summary": "Encargado del desarrollo, mantenimiento y soporte para los sistemas de clientes externos. Fuí el responsable del desarrollo y mantenimiento de la plataforma principal de la empresa, incluyendo el análisis y estimación de tiempos de entrega.",
       "highlights": [
         "hybrid",
         "frontend",
@@ -90,7 +91,7 @@
   ],
   "projects": [
     {
-      "name": "J&C Wedding",
+      "name": "Boda de Jeffrey y Cecilia",
       "isActive": true,
       "description": "Es una landing page la cual se utilizó como invitación y muestra toda la información importante referente a la boda. La misma cuenta con un formulario conectado a una base de datos para poder confirmar la asistencia al evento.",
       "highlights": [
@@ -100,6 +101,32 @@
         "PostgreSQL"
       ],
       "url": "https://jycwedding.com",
+      "github": ""
+    },
+    {
+      "name": "Boda de Kevin y Ana Mildred",
+      "isActive": true,
+      "description": "Invitación online con toda la información de itinerario, lugar del evento y opcion para confirmar asistencia.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "https://kymwedding.com",
+      "github": ""
+    },
+    {
+      "name": "Boda de Steeven y Fernanda",
+      "isActive": true,
+      "description": "Invitación online con toda la información de itinerario, lugar del evento y galeria de imagenes con informacion de los novios.",
+      "highlights": [
+        "JavaScript & TypeScript",
+        "Next.js",
+        "Tailwind",
+        "PostgreSQL"
+      ],
+      "url": "https://medinachangwedding.com",
       "github": ""
     }
   ],
@@ -122,8 +149,11 @@
     "Angular",
     "React",
     "Next.js",
+    "Astro",
     "Java",
     "PHP",
+    "Node.js",
+    ".Net",
     "Node",
     "PostgreSQL",
     "Oracle",
