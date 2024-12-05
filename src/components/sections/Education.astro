@@ -2,44 +2,43 @@
 const { currentLocale } = Astro;
 
 import Section from "@/components/Section.astro";
+import Typography from "@/components/Typography.astro";
+import Paragraph from "@/components/Paragraph.astro";
 
 import { getI18n, resume } from "@/i18n";
+import { formatDates } from "@/utils";
 
 const { education } = resume();
 const $t = getI18n(currentLocale);
-console.log('education', education)
 
 const title = currentLocale === "es" ? "Educación" : "Education";
-const currentText = currentLocale === "es" ? "actualidad" : "current";
 ---
 
 <Section title={title}>
   <ul class="flex flex-col gap-8">
     {
       education.map(({ startDate, endDate }, index) => {
-        const startYear = new Date(startDate).getFullYear();
-        const endYear = !!endDate
-          ? new Date(endDate).getFullYear()
-          : currentText;
-        const years = `${startYear} - ${endYear}`;
+        const dates = formatDates(startDate, endDate, currentLocale);
 
         return (
           <li>
             <article>
               <header class="flex justify-between items-start mb-1">
                 <div>
-                  <h3 class="text-xl font-semibold text-[#111]">
-                    {$t("education", index, "institution")}
-                  </h3>
+                  <Typography
+                    variant="h3"
+                    title={`${$t("education", index, "institution")}`}
+                  />
                 </div>
-                <time class="min-w-32 flex justify-end text-base text-[#555] mt-2">
-                  {years}
+                <time class="no-print min-w-32 flex justify-end text-base text-[#555] mt-2">
+                  {dates}
+                </time>
+                <time class="print min-w-32 flex justify-end text-sm text-[#555] mt-2">
+                  {dates}
                 </time>
               </header>
               <footer>
-                <p class="text-lg font-mono text-pretty leading-6 text-[#666]">
-                  {$t("education", index, "area")}
-                </p>
+                <Paragraph text={`${$t("education", index, "area")}`} />
               </footer>
             </article>
           </li>

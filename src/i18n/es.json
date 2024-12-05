@@ -6,7 +6,7 @@
     "image": "/me.webp",
     "email": "emiliofgonzalez7@gmail.com",
     "webUrl": "https://emiliogonzalez.dev/",
-    "about": " años de experiencia con sede en Guatemala, apasionado por el desarrollo web.",
+    "about": " años de experiencia, apasionado por el desarrollo web. Tengo experiencia como Frontend y Backend, tambien administrando Bases de datos relacionales y no relacionales. Actualmente estoy encargado de la creación y mantenimiento de módulos para sistemas empresariales enfocados en mejorar la productividad de los usuarios.",
     "networking": [
       {
         "network": "LinkedIn",
@@ -17,6 +17,11 @@
         "network": "GitHub",
         "username": "emiliotsx",
         "url": "https://github.com/emiliotsx"
+      },
+      {
+        "network": "Website",
+        "username": "Emilio González",
+        "url": "https://emiliogonzalez.dev"
       }
     ]
   },

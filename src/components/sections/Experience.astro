@@ -2,47 +2,48 @@
 const { currentLocale } = Astro;
 
 import Section from "@/components/Section.astro";
+import Typography from "@/components/Typography.astro";
+import Paragraph from "@/components/Paragraph.astro";
 
 import { getI18n, resume } from "@/i18n";
+import { formatDates } from "@/utils";
 
 const { work } = resume();
 const $t = getI18n(currentLocale);
 
 const title =
   currentLocale === "es" ? "Experiencia Laboral" : "Work Experience";
-const currentText = currentLocale === "es" ? "actualidad" : "current";
 ---
 
 <Section title={title}>
-  <ul class="flex flex-col gap-8">
+  <ul class="flex flex-col gap-4">
     {
       work.map(({ startDate, endDate }, index) => {
-        const startYear = new Date(startDate).getFullYear();
-        const endYear = !!endDate
-          ? new Date(endDate).getFullYear()
-          : currentText;
-        const years = `${startYear} - ${endYear}`;
+        const dates = formatDates(startDate, endDate, currentLocale);
 
         return (
           <li>
             <article>
-              <header class="flex justify-between items-start mb-1 text-lg">
+              <header class="flex justify-between items-start mb-1">
                 <div>
-                  <h3 class="text-xl font-semibold text-[#111]">
-                    {$t("work", index, "company")}
-                  </h3>
-                  <h4 class="text-xl font-medium font-mono mt-1 text-[#222]">
-                    {$t("work", index, "position")}
-                  </h4>
+                  <Typography
+                    variant="h3"
+                    title={`${$t("work", index, "company")}`}
+                  />
+                  <Typography
+                    variant="h4"
+                    title={`${$t("work", index, "position")}`}
+                  />
                 </div>
-                <time class="min-w-24 flex justify-end text-base text-[#555] mt-2">
-                  {years}
+                <time class="no-print min-w-24 flex justify-end text-base text-[#555] mt-1 tracking-tighter">
+                  {dates}
+                </time>
+                <time class="print min-w-24 flex justify-end text-sm text-[#555] mt-1 tracking-tighter">
+                  {dates}
                 </time>
               </header>
               <footer>
-                <p class="text-lg text-wrap font-mono leading-6 font-normal text-[#666]">
-                  {$t("work", index, "summary")}
-                </p>
+                <Paragraph text={`${$t("work", index, "summary")}`} />
               </footer>
             </article>
           </li>
