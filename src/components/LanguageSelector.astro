@@ -9,9 +9,9 @@ const locale =
     : { text: "Switch to Spanish", redirectUrl: "/" };
 ---
 
-<div class="flex items-center justify-end -mb-8 w-full lg:w-[800px] mx-auto">
+<div class="flex items-center justify-end w-full lg:w-[800px] mx-auto no-print">
   <a
-    class="no-print text-sm text-[#777] text-center border border-solid border-[#eee] p-1 h-8 w-36 rounded-md cursor-pointer transition-all ease-linear hover:bg-[#eee] hover:border-[#ddd] flex items-center justify-evenly"
+    class="no-print text-sm text-[#777] text-center border border-solid border-[#eee] p-1 h-8 w-36 rounded-md cursor-pointer transition-all ease-linear hover:bg-[#eee] hover:border-[#ddd] flex items-center justify-evenly min-w-fit"
     href={locale.redirectUrl}
   >
     <Translate />

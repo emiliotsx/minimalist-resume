@@ -6,17 +6,21 @@ import World from "@/assets/icons/World.astro";
 import Email from "@/assets/icons/Email.astro";
 import GitHub from "@/assets/icons/GitHub.astro";
 import LinkedIn from "@/assets/icons/LinkedIn.astro";
+import Website from "@/assets/icons/Website.astro";
+import Typography from "@/components/Typography.astro";
+import Paragraph from "@/components/Paragraph.astro";
 
 import { getI18n, resume } from "@/i18n";
 
 const { personal } = resume();
 const $t = getI18n(currentLocale);
 
-const { name, email, image, networking } = personal;
+const { name, email, networking } = personal;
 
 const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
   LinkedIn,
+  Website,
 };
 
 const infoNetworking = networking.map((n) => n.url);
@@ -32,18 +36,16 @@ const titleNetwork = (username: string, network: string) =>
 ---
 
 <Section>
-  <div class="flex flex-row items-center justify-between gap-4">
-    <div class="flex flex-col gap-2 pr-8">
-      <h1 class="text-4xl font-bold">{$t("personal.name")}</h1>
-      <h2 class="text-2xl text-[#444] font-mono">{$t("personal.summary")}</h2>
+  <article class="text-center border-b-2 border-[#555]">
+    <Typography variant="h1" title={`${$t("personal.name")}`} />
+    <div class="no-print flex justify-around gap-2 mt-2">
       <span
-        class="text-[#666] flex items-center gap-1 text-xl tracking-tighter font-mono"
+        class="no-print text-[#666] flex items-center gap-1 text-xl tracking-tighter font-mono my-2"
       >
         <World />
         {$t("personal.location")}
       </span>
-      <footer class="print text-sm">{printInfoNetworking}</footer>
-      <footer class="no-print text-xs flex gap-1 mt-[1px]">
+      <footer class="text-xs flex gap-1 mt-[4px]">
         {
           email && (
             <a
@@ -75,12 +77,8 @@ const titleNetwork = (username: string, network: string) =>
         }
       </footer>
     </div>
-    <figure>
-      <img
-        class="aspect-square object-cover w-40 rounded-md"
-        src={image}
-        alt="profile"
-      />
-    </figure>
-  </div>
+    <div class="print my-2">
+      <Paragraph text={printInfoNetworking} />
+    </div>
+  </article>
 </Section>

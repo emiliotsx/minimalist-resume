@@ -1,0 +1,34 @@
+---
+const { variant, title } = Astro.props;
+---
+
+<>
+  {
+    variant === "h1" && (
+      <h1 class="text-2xl font-bold mt-2 leading-6 tracking-tighter">
+        {title}
+      </h1>
+    )
+  }
+  {
+    variant === "h2" && (
+      <h2 class="mb-[6px] font-bold leading-6 text-xl border-b-2 border-[#555] pb-2 tracking-tight">
+        {title}
+      </h2>
+    )
+  }
+  {
+    variant === "h3" && (
+      <h3 class="text-lg font-bold text-[#111] leading-6 tracking-tighter">
+        {title}
+      </h3>
+    )
+  }
+  {
+    variant === "h4" && (
+      <h4 class="text-base font-medium font-mono text-[#222] tracking-tighter leading-6">
+        {title}
+      </h4>
+    )
+  }
+</>

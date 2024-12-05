@@ -2,16 +2,14 @@
 const { currentLocale } = Astro;
 
 import Section from "@/components/Section.astro";
+import Paragraph from "@/components/Paragraph.astro";
 
 import { getI18n } from "@/i18n";
 
 const $t = getI18n(currentLocale);
-
-const title = currentLocale === "es" ? "Sobre mí" : "About me";
-
 const years = new Date().getFullYear() - 2018;
 ---
 
-<Section title={title}>
-  <p class="text-lg font-normal font-mono">+ {years} {$t("personal.about")}</p>
+<Section>
+  <Paragraph text={`+ ${years} ${$t("personal.about")}`} />
 </Section>

@@ -2,6 +2,7 @@
 const { currentLocale } = Astro;
 
 import Section from "@/components/Section.astro";
+import Paragraph from "@/components/Paragraph.astro";
 
 import { getI18n, resume } from "@/i18n";
 
@@ -15,7 +16,7 @@ const titleProject = (name: string) =>
     : `See the project ${name}`;
 ---
 
-<Section title={title}>
+<Section title={title} className="no-print">
   <ul>
     {
       projects.map(({ name, isActive, highlights, url }, index) => {
@@ -34,9 +35,7 @@ const titleProject = (name: string) =>
                   </a>
                   {isActive && <span class="text-[#00bc2f]">&bull;</span>}
                 </h3>
-                <p class="text-lg font-mono font-normal pb-2">
-                  {$t("projects", index, "description")}
-                </p>
+                <Paragraph text={`${$t("projects", index, "description")}`} />
               </header>
               <footer class="inline-flex flex-wrap gap-1 text-base">
                 {highlights.map((highlight) => (

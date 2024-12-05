@@ -6,7 +6,7 @@
     "image": "/me.webp",
     "email": "emiliofgonzalez7@gmail.com",
     "webUrl": " https://emiliogonzalez.dev/",
-    "about": "years of experience based in Guatemala, passionate about web development.",
+    "about": "years of experience, passionate about web development. I have experience as Frontend y Backend, and also managing relational and non-relational databases. Currently, I am responsible for creating and maintaining modules for enterprise systems focused on improving user productivity.",
     "networking": [
       {
         "network": "LinkedIn",
@@ -17,6 +17,11 @@
         "network": "GitHub",
         "username": "emiliotsx",
         "url": "https://github.com/emiliotsx"
+      },
+      {
+        "network": "Website",
+        "username": "Emilio González",
+        "url": "https://emiliogonzalez.dev"
       }
     ]
   },
@@ -79,7 +84,7 @@
       "url": "https://www.estratek.com/",
       "startDate": "2018-11-01",
       "endDate": "2020-02-01",
-      "summary": "Responsible for the development, maintenance, and support of external client systems. Took charge of the development and maintenance of the company's main platform, including analysis and delivery time estimation.",
+      "summary": "Responsible for the development, maintenance, and support of external client systems. I was responsible of the development and maintenance of the company's main platform, including analysis and delivery time estimation.",
       "highlights": [
         "hybrid",
         "frontend",
