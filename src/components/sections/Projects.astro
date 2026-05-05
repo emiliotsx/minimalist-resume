@@ -19,7 +19,7 @@ const titleProject = (name: string) =>
 <Section title={title} className="no-print">
   <ul>
     {
-      projects.map(({ name, isActive, highlights, url }, index) => {
+      projects?.map(({ name, isActive, highlights, url }: { name: string; isActive: boolean; highlights: string[]; url: string }, index) => {
         return (
           <li>
             <article class="rounded-md border border-solid border-[#f2f2f2] gap-4 flex flex-col p-4 h-full">
@@ -38,7 +38,7 @@ const titleProject = (name: string) =>
                 <Paragraph text={`${$t("projects", index, "description")}`} />
               </header>
               <footer class="inline-flex flex-wrap gap-1 text-base">
-                {highlights.map((highlight) => (
+                {highlights.map((highlight: string) => (
                   <span class="rounded-md bg-[#eee] text-[#444] text-xs font-medium px-2 py-1">
                     {highlight}
                   </span>
