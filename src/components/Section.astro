@@ -1,10 +1,10 @@
 ---
-const { title, className } = Astro.props;
+const { title, className, showPrintTitle = true } = Astro.props;
 
 import Typography from "@/components/Typography.astro";
 ---
 
 <section class={`w-full mx-auto lg:w-[800px] my-5 print-force-new-page ${!!className ? className : ''}`}>
-  {title && <Typography variant="h2" title={title}/>}
+  {title && <Typography variant="h2" title={title} showPrintTitle={showPrintTitle} />}
   <slot />
 </section>

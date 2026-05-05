@@ -16,38 +16,53 @@ const titleProject = (name: string) =>
     : `See the project ${name}`;
 ---
 
-<Section title={title} className="no-print">
+<Section title={title} className="no-print" showPrintTitle={!!projects?.length}>
   <ul>
     {
-      projects?.map(({ name, isActive, highlights, url }: { name: string; isActive: boolean; highlights: string[]; url: string }, index) => {
-        return (
-          <li>
-            <article class="rounded-md border border-solid border-[#f2f2f2] gap-4 flex flex-col p-4 h-full">
-              <header class="flex-1">
-                <h3 class="mb-1">
-                  <a
-                    href={url}
-                    title={titleProject(name)}
-                    target="_blank"
-                    class="text-lg text-[#111] hover:underline"
-                  >
-                    {$t("projects", index, "name")}
-                  </a>
-                  {isActive && <span class="text-[#00bc2f]">&bull;</span>}
-                </h3>
-                <Paragraph text={`${$t("projects", index, "description")}`} />
-              </header>
-              <footer class="inline-flex flex-wrap gap-1 text-base">
-                {highlights.map((highlight: string) => (
-                  <span class="rounded-md bg-[#eee] text-[#444] text-xs font-medium px-2 py-1">
-                    {highlight}
-                  </span>
-                ))}
-              </footer>
-            </article>
-          </li>
-        );
-      })
+      projects?.map(
+        (
+          {
+            name,
+            isActive,
+            highlights,
+            url,
+          }: {
+            name: string;
+            isActive: boolean;
+            highlights: string[];
+            url: string;
+          },
+          index,
+        ) => {
+          return (
+            <li>
+              <article class="rounded-md border border-solid border-[#f2f2f2] gap-4 flex flex-col p-4 h-full">
+                <header class="flex-1">
+                  <h3 class="mb-1">
+                    <a
+                      href={url}
+                      title={titleProject(name)}
+                      target="_blank"
+                      class="text-lg text-[#111] hover:underline"
+                    >
+                      {$t("projects", index, "name")}
+                    </a>
+                    {isActive && <span class="text-[#00bc2f]">&bull;</span>}
+                  </h3>
+                  <Paragraph text={`${$t("projects", index, "description")}`} />
+                </header>
+                <footer class="inline-flex flex-wrap gap-1 text-base">
+                  {highlights.map((highlight: string) => (
+                    <span class="rounded-md bg-[#eee] text-[#444] text-xs font-medium px-2 py-1">
+                      {highlight}
+                    </span>
+                  ))}
+                </footer>
+              </article>
+            </li>
+          );
+        },
+      )
     }
   </ul>
 </Section>
