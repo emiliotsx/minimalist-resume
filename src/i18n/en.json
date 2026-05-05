@@ -6,7 +6,7 @@
     "image": "/me.webp",
     "email": "emiliofgonzalez7@gmail.com",
     "webUrl": " https://emiliogonzalez.dev/",
-    "about": "years of experience, passionate about web development. I have experience as Frontend y Backend, and also managing relational and non-relational databases. Currently, I am responsible for creating and maintaining modules for enterprise systems focused on improving user productivity.",
+    "about": "years of experience in web application and enterprise system development. Experienced in both frontend and backend, as well as relational and non-relational databases. Currently focused on building and maintaining cloud-based solutions using Spring Boot, PostgreSQL, Vue.js, and AWS, working with microservices and asynchronous processing to deliver scalable and highly available systems.",
     "networking": [
       {
         "network": "LinkedIn",
@@ -27,11 +27,25 @@
   },
   "work": [
     {
+      "company": "Osigu",
+      "position": "Fullstack Software Engineer",
+      "url": "https://www.osigu.com/",
+      "startDate": "2025-04-21",
+      "endDate": null,
+      "summary": "Fullstack Software Engineer specialized in scalable cloud applications, with experience in microservices, APIs, and distributed systems on AWS. Working with Spring Boot, PostgreSQL, and Vue.js, focused on high availability, concurrency, and asynchronous processing (SQS). Strong emphasis on performance, resilience, and continuous improvement.",
+      "highlights": [
+        "hybrid",
+        "frontend",
+        "backend",
+        "database"
+      ]
+    },
+    {
       "company": "Grupo Tecun",
       "position": "Senior Web Developer",
       "url": "https://www.grupotecun.com/",
       "startDate": "2022-03-01",
-      "endDate": null,
+      "endDate": "2025-04-17",
       "summary": "In charge of developing new functionalities, working on the frontend, backend and database adjustments. Support in analysis and integration of new developments with external suppliers.",
       "highlights": [
         "hybrid",
@@ -93,47 +107,7 @@
       ]
     }
   ],
-  "projects": [
-    {
-      "name": "J&Jeffrey and Cecilia's Wedding",
-      "isActive": true,
-      "description": "This is a landing page used as an invitation, showcasing all the important information about the wedding. It includes a form connected to a database to confirm attendance at the event.",
-      "highlights": [
-        "JavaScript & TypeScript",
-        "Next.js",
-        "Tailwind",
-        "PostgreSQL"
-      ],
-      "url": "https://jycwedding.com",
-      "github": ""
-    },
-    {
-      "name": "Kevin and Ana Mildred's Wedding",
-      "isActive": true,
-      "description": "Online invitation with all the information about the itinerary, event location, and an option to confirm attendance.",
-      "highlights": [
-        "JavaScript & TypeScript",
-        "Next.js",
-        "Tailwind",
-        "PostgreSQL"
-      ],
-      "url": "https://kymwedding.com",
-      "github": ""
-    },
-    {
-      "name": "Steeven and Fernanda's Wedding",
-      "isActive": true,
-      "description": "Online invitation with all the information about the itinerary, event location, and an image gallery with details about the couple.",
-      "highlights": [
-        "JavaScript & TypeScript",
-        "Next.js",
-        "Tailwind",
-        "PostgreSQL"
-      ],
-      "url": "https://www.medinachangwedding.com/",
-      "github": ""
-    }
-  ],
+  "projects": [],
   "education": [
     {
       "institution": "Mariano Galvez University of Guatemala",
@@ -163,6 +137,10 @@
     "Oracle",
     "SQL Server",
     "Git",
-    "GitHub"
+    "GitHub",
+    "AWS",
+    "Spring Boot",
+    "Vue.js",
+    "Phyton"
   ]
 }
